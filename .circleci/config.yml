@@ -33,4 +33,7 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
-  
+workflows:
+  build_test_push_deploy:
+    jobs:
+      - build_and_test_inside_venv
