@@ -26,6 +26,8 @@ Cached Instances for Django REST Framework
 
 Speed up `Django REST Framework`_ (DRF) reads by storing instance data in cache.
 
+Forked from [drf-cached-instances](https://github.com/jwhitlock/drf-cached-instances) as it is no longer actively maintained.
+
 This code was split from browsercompat_.  You may be interested in
 viewing the browsercompat source code for a full example implementation.
 

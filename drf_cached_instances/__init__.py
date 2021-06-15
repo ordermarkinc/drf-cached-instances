@@ -1,5 +1,5 @@
 """Django app for drf-cached-instances."""
 
-__author__ = 'John Whitlock'
-__email__ = 'john@factorialfive.com'
-__version__ = '0.3.4'
+__author__ = 'Ordermark Dev'
+__email__ = 'ordermark-dev@getordermark.com'
+__version__ = '1.0.0'
