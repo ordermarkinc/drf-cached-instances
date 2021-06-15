@@ -4,10 +4,9 @@ from calendar import timegm
 from datetime import date, datetime, timedelta
 from pytz import utc
 import json
-
+import six
 from django.conf import settings
 from django.utils.dateparse import parse_date, parse_datetime
-from django.utils import six
 
 from .compat import get_model, parse_duration
 from .models import PkOnlyModel, PkOnlyQueryset

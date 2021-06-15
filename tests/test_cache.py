@@ -2,7 +2,7 @@
 
 from datetime import datetime, date, timedelta
 from json import dumps
-import mock
+from unittest import mock
 
 from django.contrib.auth.models import User, Group
 from django.test import TestCase
@@ -16,7 +16,7 @@ from sample_poll_app.cache import SampleCache
 from sample_poll_app.models import Question, Choice
 
 
-class SharedCacheTests(object):
+class SharedCacheTests:
     """Define generic cache tests."""
 
     def test_get_instances_no_specs(self):

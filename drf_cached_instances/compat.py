@@ -2,12 +2,8 @@
 
 # get_model(app_name, model_name)
 # Retrieves Django model class given the app and model name
-try:
-    # Django 1.8 and later
-    from django.apps import apps
-    get_model = apps.get_model
-except ImportError:  # pragma: nocover
-    from django.db.models.loading import get_model
+from django.apps import apps
+get_model = apps.get_model
 assert get_model
 
 # parse_duration(string)
@@ -18,7 +14,7 @@ try:
 except:  # pragma: nocover
     from datetime import timedelta
     import re
-    from django.utils import six
+    import six
 
     standard_duration_re = re.compile(
         r'^'

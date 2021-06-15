@@ -9,6 +9,6 @@ from sample_poll_app.urls import urlpatterns as sample_urlpatterns
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
     url(r'', include(sample_urlpatterns)),
 ]

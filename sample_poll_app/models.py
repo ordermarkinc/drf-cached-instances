@@ -19,7 +19,7 @@ class Question(models.Model):
 class Choice(models.Model):
     """An answer to a poll question."""
 
-    question = models.ForeignKey(Question, related_name='choices')
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='choices')
     choice_text = models.CharField(max_length=200)
     voters = models.ManyToManyField(User, related_name='votes')
 

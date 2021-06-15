@@ -2,20 +2,15 @@
 # Requirements for running drf-cached-instances
 #
 
-Django>=1.10,<1.11
-djangorestframework>=3.4,<3.5
+Django==3.2.4
+djangorestframework==3.12.4
 
-
-#
-# Optional but useful requirements
-#
-
-# Celery - async task management
-celery==3.1.23
 
 #
 # Requirements for developing drf-cached-instances
 #
+
+celery>=5.1.0
 
 # Packaging
 wheel==0.29.0
@@ -56,20 +51,7 @@ dj-static==0.0.6
 Werkzeug==0.11.10
 
 # Django debug toolbar
-django-debug-toolbar==1.11.1
-
-# Testing library, added as unittest.mock in Python 3.3
-mock==2.0.0
+django-debug-toolbar==3.2.1
 
 # Load database settings from environment
 dj-database-url==0.4.1
-
-#
-# Requirements for Heroku
-#
-
-# WSGI runner
-gunicorn==19.6.0
-
-# PostgreSQL driver
-psycopg2==2.6.2
