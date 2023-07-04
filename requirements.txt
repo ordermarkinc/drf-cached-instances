@@ -2,7 +2,7 @@
 # Requirements for running drf-cached-instances
 #
 
-Django==3.2.4
+Django==3.2.20
 djangorestframework==3.12.4
 
 
